@@ -4,7 +4,7 @@
   "sourceRoot": "libs/lib3/src",
   "prefix": "angular-tailwind-nx",
   "targets": {
-    "build-angular": {
+    "build": {
       "executor": "@nrwl/angular:package",
       "outputs": ["dist/libs/lib3"],
       "options": {
@@ -59,7 +59,7 @@
       },
       "defaultConfiguration": "production"
     },
-    "build": {
+    "build-not-executed": {
       "executor": "nx:run-commands",
       "outputs": ["dist/libs/lib3"],
       "configurations": {
