@@ -1,6 +1,6 @@
 {
+  "name": "lib3",
   "projectType": "library",
-  "root": "libs/lib3",
   "sourceRoot": "libs/lib3/src",
   "prefix": "angular-tailwind-nx",
   "targets": {
@@ -22,7 +22,7 @@
       "defaultConfiguration": "production"
     },
     "build-themes": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "outputs": ["dist/libs/lib3/themes"],
       "configurations": {
         "production": {
@@ -41,7 +41,7 @@
       "defaultConfiguration": "production"
     },
     "build-lib": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "outputs": ["dist/libs/lib3"],
       "configurations": {
         "production": {
@@ -60,7 +60,7 @@
       "defaultConfiguration": "production"
     },
     "build": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "outputs": ["dist/libs/lib3"],
       "configurations": {
         "production": {
@@ -84,7 +84,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/lib3"],
       "options": {
-        "jestConfig": "libs/lib3/jest.config.js",
+        "jestConfig": "libs/lib3/jest.config.ts",
         "passWithNoTests": true
       }
     },

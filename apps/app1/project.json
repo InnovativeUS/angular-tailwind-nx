@@ -1,6 +1,6 @@
 {
+  "name": "app1",
   "projectType": "application",
-  "root": "apps/app1",
   "sourceRoot": "apps/app1/src",
   "prefix": "angular-tailwind-nx",
   "targets": {
@@ -15,7 +15,8 @@
         "tsConfig": "apps/app1/tsconfig.app.json",
         "assets": ["apps/app1/src/favicon.ico", "apps/app1/src/assets"],
         "styles": ["apps/app1/src/styles.css"],
-        "scripts": []
+        "scripts": [],
+        "buildLibsFromSource": false
       },
       "configurations": {
         "production": {
@@ -78,7 +79,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/app1"],
       "options": {
-        "jestConfig": "apps/app1/jest.config.js",
+        "jestConfig": "apps/app1/jest.config.ts",
         "passWithNoTests": true
       }
     }

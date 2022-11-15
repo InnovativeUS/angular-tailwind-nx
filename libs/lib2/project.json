@@ -1,6 +1,6 @@
 {
+  "name": "lib2",
   "projectType": "library",
-  "root": "libs/lib2",
   "sourceRoot": "libs/lib2/src",
   "prefix": "angular-tailwind-nx",
   "targets": {
@@ -25,7 +25,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/lib2"],
       "options": {
-        "jestConfig": "libs/lib2/jest.config.js",
+        "jestConfig": "libs/lib2/jest.config.ts",
         "passWithNoTests": true
       }
     },
